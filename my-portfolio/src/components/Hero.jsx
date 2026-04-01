@@ -79,6 +79,19 @@ export default function Hero() {
               onMouseLeave={e => { e.target.style.transform = "none"; e.target.style.boxShadow = "none"; }}
             >VIEW PROJECTS</a>
 
+            <a href="/resume.pdf" download="Ankit_Kumar_Resume.pdf" style={{
+              background: "transparent",
+              border: "1px solid var(--accent)", color: "var(--accent)",
+              fontFamily: "'Fira Code', monospace", fontSize: "12px",
+              fontWeight: "500", letterSpacing: "0.07em",
+              padding: "11px 26px", borderRadius: "3px",
+              display: "inline-block",
+              transition: "background 0.2s, transform 0.2s",
+            }}
+              onMouseEnter={e => { e.currentTarget.style.background = "rgba(99,202,183,0.1)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
+              onMouseLeave={e => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.transform = "none"; }}
+            >⬇ DOWNLOAD CV</a>
+
             <a href="https://linkedin.com/in/ankit-sharma-674434399" target="_blank" rel="noreferrer" style={{
               border: "1px solid var(--accent)", color: "var(--accent)",
               fontFamily: "'Fira Code', monospace", fontSize: "12px",
